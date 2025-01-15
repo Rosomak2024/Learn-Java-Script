@@ -31,7 +31,7 @@ function showRandomePicture() {
     if (img) {
       img.remove();
     }
-  }, 2000);
+  }, 3000);
   const links = [
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3R6aTlmNTNuZXZvdXkxZmIybG5uY3hiMDR5MGNtenhxb3pwaWJxbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhweiVB36rAlqVCE/giphy.gif",
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjkxdHFlYmo0cWFkMm5yZzBtemFnYjdtbDdnMGI3dTlyd2l1ZWtuZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VEDMx3Fpqlj4YH9EE5/giphy.gif",
@@ -51,17 +51,12 @@ function doneTask(e) {
   }
 }
 
-// const img = document.createElement("img");
-// img.src =
-//   "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3R6aTlmNTNuZXZvdXkxZmIybG5uY3hiMDR5MGNtenhxb3pwaWJxbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhweiVB36rAlqVCE/giphy.gif";
-// document.body.appendChild(img);
-
 const renderTasks = () => {
   list.innerHTML = "";
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
     li.innerText = task.text;
-    li.classList.add("list-item");
+    li.classList.add("list_item");
     if (task.done) {
       li.classList.add("done");
     }

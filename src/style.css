@@ -5,7 +5,8 @@
 }
 
 html {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
 body{
   background-color: #f5f5f5;
@@ -14,7 +15,81 @@ body{
   line-height: 1.5;
 }
 
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+h1{
+  font-size: 2rem;
+   /* font uppercase */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+#app{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+label{
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+} 
+
+form input[type="text"]{
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.list_item{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
 .done {
   text-decoration: line-through;
   color: gray; /* opcjonalnie zmień kolor tekstu */
+}
+
+.add_button{
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button{
+  background-color: #333;
+  margin-left: 1rem;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer{
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
