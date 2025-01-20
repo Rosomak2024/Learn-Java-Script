@@ -13,6 +13,9 @@ body{
   color: #333;
   font-size: 16px;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header{
@@ -30,9 +33,11 @@ h1{
   margin-bottom: 1rem;
 }
 #app{
+  height: 100vh;
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
+
 }
 
 form{
@@ -57,7 +62,7 @@ form input[type="text"]{
 
 .list_item{
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #ccc;
@@ -65,7 +70,7 @@ form input[type="text"]{
 
 .done {
   text-decoration: line-through;
-  color: gray; /* opcjonalnie zmień kolor tekstu */
+  color: gray;
 }
 
 .add_button{
@@ -87,9 +92,32 @@ button{
   cursor: pointer;
 }
 
+img{
+  width: 20rem;  
+  }
+
 footer{
   background-color: #333;
   color: #fff;
   padding: 1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  #app{
+    padding: 0.5rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  form{
+    flex-direction: column;
+  }
+  form input[type="text"]{
+    margin-bottom: 0.5rem;
+  }
+  button{
+    margin-left: 0;
+  }
+  
 }

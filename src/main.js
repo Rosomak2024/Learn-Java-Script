@@ -38,7 +38,8 @@ function showRandomePicture() {
   ];
   const img = document.createElement("img");
   img.src = links[Math.floor(Math.random() * links.length)];
-  document.body.appendChild(img);
+  const app = document.querySelector("#app");
+  app.appendChild(img);
 }
 
 function doneTask(e) {
